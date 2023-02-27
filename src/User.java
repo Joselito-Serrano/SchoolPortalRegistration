@@ -42,8 +42,7 @@ public class User {
         if (format.equalsIgnoreCase("")) {
             format = "yyyy-mm-dd";
         }
-        String result = LocalDate.parse(birthDay.toString(), DateTimeFormatter.ofPattern(format)).toString();
-        return result;
+        return LocalDate.parse(birthDay.toString(), DateTimeFormatter.ofPattern(format)).toString();
     }
 
     public boolean setBirthDay(String birthDay) {
@@ -100,28 +99,24 @@ public class User {
     public boolean containsNumeral(String input) {
         Pattern pattern = Pattern.compile("\\d");
         Matcher matcher = pattern.matcher(input);
-        boolean result = matcher.find();
-        return result;
+        return matcher.find();
     }
 
     public boolean containsSpecialChars(String input) {
         Pattern pattern = Pattern.compile("[^a-zA-Z0-9 ]");
         Matcher matcher = pattern.matcher(input);
-        boolean result = matcher.find();
-        return result;
+        return matcher.find();
     }
 
     public boolean characterLimit(String input) {
         final int charLimit = 50;
-        boolean result = charLimit < input.length();
-        return result;
+        return charLimit < input.length();
     }
 
     public boolean correctDateFormat(String date) {
         Pattern pattern = Pattern.compile("^[\\d]{4}/[\\d]{2}/[\\d]{2}$");
         Matcher matcher = pattern.matcher(date);
-        boolean result = matcher.find();
-        return result;
+        return matcher.find();
     }
 
     public boolean acceptableCollegeAge(String date) {
@@ -160,9 +155,7 @@ public class User {
         final String emailRegex = "^[a-zA-Z0-9_!#$%&'*+/=?``{|}~^.-]+@[a-zA-Z0-9.-]+$";
         Pattern pattern = Pattern.compile(emailRegex, Pattern.CASE_INSENSITIVE);
         Matcher matcher = pattern.matcher(emailAddress);
-        boolean result = matcher.find();
-        return result;
-
+        return matcher.find();
     }
 
 }
