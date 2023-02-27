@@ -125,12 +125,7 @@ public class User {
         try {
             final int age = getAge(date);
 
-
-            if (age < collegeAgeMin || age > collegeAgeMax) {
-                return false;
-            } else {
-                return true;
-            }
+            return (age < collegeAgeMin || age > collegeAgeMax ? false : true);
         } catch (DateTimeParseException e) {
             return false;
         }
