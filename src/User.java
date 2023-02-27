@@ -85,7 +85,7 @@ public class User {
     }
 
     public boolean setStudentNumber() {
-        if (!firstName.isEmpty() && !firstName.isEmpty()
+        if (!firstName.isEmpty() && !lastName.isEmpty()
                 && !birthDay.toString().isEmpty() && !course.isEmpty()
                 && !emailAddress.isEmpty()) {
             int year = LocalDate.now().getYear();
