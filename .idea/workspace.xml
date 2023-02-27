@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="80dd7cbb-2673-410d-9dcc-05e2d6bb2155" name="Changes" comment="Fixed: Wrong variable in line 88 second firstName should be lastName">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="80dd7cbb-2673-410d-9dcc-05e2d6bb2155" name="Changes" comment="Simplify the life 129-133 if statement to ternary operator&#10;&#10;if (x||y) return false;&#10;else return true;&#10;&#10;to&#10;&#10;return (x||y ? true: false);">
       <change beforePath="$PROJECT_DIR$/src/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/User.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -83,7 +82,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677490840880</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Simplify the life 129-133 if statement to ternary operator&#10;&#10;if (x||y) return false;&#10;else return true;&#10;&#10;to&#10;&#10;return (x||y ? true: false);">
+      <created>1677491202914</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1677491202914</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -102,6 +108,7 @@
     <MESSAGE value="Made it Work with some decent classes and some validations" />
     <MESSAGE value="Optimized the User.java by directly returning the boolean value instead of putting it in the variable then returning the variable &#10;&#10;Ex.&#10;boolean result = matcher.find(); &#10;return result;&#10;To&#10;return matcher.find();" />
     <MESSAGE value="Fixed: Wrong variable in line 88 second firstName should be lastName" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed: Wrong variable in line 88 second firstName should be lastName" />
+    <MESSAGE value="Simplify the life 129-133 if statement to ternary operator&#10;&#10;if (x||y) return false;&#10;else return true;&#10;&#10;to&#10;&#10;return (x||y ? true: false);" />
+    <option name="LAST_COMMIT_MESSAGE" value="Simplify the life 129-133 if statement to ternary operator&#10;&#10;if (x||y) return false;&#10;else return true;&#10;&#10;to&#10;&#10;return (x||y ? true: false);" />
   </component>
 </project>
